@@ -581,7 +581,10 @@
       
         
           
-            
+            <h1 id="如何将div高度设置为浏览器的高度"><a href="#如何将div高度设置为浏览器的高度" class="headerlink" title="如何将div高度设置为浏览器的高度"></a>如何将div高度设置为浏览器的高度</h1><p>我们有时需要将某个元素的高度设置为整个浏览器的高度，想到的可能是</p>
+<figure class="highlight plain"><figcaption><span>````</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">不过这样是没有效果的，原因是在html和body元素在没有明确设置高度的情况下，高度是这样的</span><br><span class="line"></span><br><span class="line">```` height: auto;</span><br></pre></td></tr></table></figure>
+<p> 所以整个页面的高度其实就是取决body内的元素高度，那么怎么让元素高度等于浏览器窗口高度呢？<br>很简单，将html和body的高度设置为100%，再将目标元素的高度也设置为100%就可以了。</p>
+
           
         
       
